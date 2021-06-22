@@ -1,7 +1,7 @@
 CXX=g++
 CXXFLAGS=-std=c++17 -Wpedantic -Wall -Wextra -Werror -Weffc++ -Wzero-as-null-pointer-constant
 OPTIMIZE=-O2
-FILES=FlappyBird.hpp FlappyBird.cpp main.cpp
+FILES=Bird.hpp Bird.cpp FlappyBird.hpp FlappyBird.cpp main.cpp
 TARGET=flappybird
 LIBRARIES=-l sfml-graphics -l sfml-window -l sfml-system
 

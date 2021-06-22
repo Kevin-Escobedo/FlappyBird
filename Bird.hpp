@@ -14,7 +14,7 @@ private:
     sf::Vector2f birdPosition;
 
 public:
-    Bird(const int windowX, const int windowY);
+    Bird(const int windowX = 1200, const int windowY = 600);
     Bird(const Bird& b);
     Bird& operator =(const Bird& b);
     ~Bird();

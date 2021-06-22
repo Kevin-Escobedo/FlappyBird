@@ -38,6 +38,11 @@ Bird& Bird::operator =(const Bird& b)
     return *this;
 }
 
+Bird::~Bird()
+{
+    
+}
+
 sf::Vector2f Bird::getPosition()
 {
     return birdPosition;

@@ -3,11 +3,13 @@
 
 #include <SFML/Graphics/RenderWindow.hpp>
 #include <SFML/Window/Event.hpp>
+#include "Bird.hpp"
 
 class FlappyBird
 {
 private:
     sf::RenderWindow window;
+    Bird bird;
 
 public:
     FlappyBird(const int windowX, const int windowY);
@@ -15,6 +17,9 @@ public:
     FlappyBird& operator =(const FlappyBird& fb);
     ~FlappyBird();
     void run();
+
+private:
+    void drawAllShapes();
 };
 
 #endif /* FLAPPYBIRD_HPP */
