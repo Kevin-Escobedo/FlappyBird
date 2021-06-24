@@ -20,6 +20,7 @@ public:
     ~Bird();
     sf::Vector2f getPosition();
     sf::Vector2f getDimensions();
+    void move(const bool up);
 };
 
 #endif /* BIRD_HPP */

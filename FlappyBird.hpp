@@ -3,11 +3,13 @@
 
 #include <SFML/Graphics/RenderWindow.hpp>
 #include <SFML/Window/Event.hpp>
+#include <SFML/Window/Keyboard.hpp>
 #include "Bird.hpp"
 
 class FlappyBird
 {
 private:
+    const int FRAMERATE = 60;
     sf::RenderWindow window;
     Bird bird;
 

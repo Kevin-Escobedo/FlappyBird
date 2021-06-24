@@ -52,3 +52,26 @@ sf::Vector2f Bird::getDimensions()
 {
     return birdDimensions;
 }
+
+void Bird::move(const bool up)
+{
+    const int windowY = getPosition().y * 2;
+
+    if(up)
+    {
+        if(birdPosition.y - (0.006 * windowY) >= 0)
+        {
+            birdPosition.y -= 0.006 * windowY;
+        }
+    }
+
+    else
+    {
+        if(birdPosition.y + (0.003 * windowY) <= windowY)
+        {
+            birdPosition.y += 0.003 * windowY;
+        }
+    }
+
+    bird.setPosition(birdPosition.x, birdPosition.y);
+}
